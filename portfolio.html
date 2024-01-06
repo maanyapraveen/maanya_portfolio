@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+ />
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            background-image: url(img2.jpg);
+        }
+
+        header {
+            background-color: burlywood;
+            padding: 10px;
+            text-align: center;
+            color:black;
+        }
+
+        #about-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: bisque;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        #profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+        img#dancing-image {
+            display: none;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            margin: 0 auto; /* Center the image horizontally */
+            display: block;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        #about-container .ri-html5-fill,
+    #about-container .ri-css3-fill,
+    #about-container .ri-javascript-fill {
+        font-size: 50px; /* Adjust the size as needed */
+    }
+    #about-container a {
+        text-decoration: none; /* Remove underline */
+        color: #333; /* Set link color */
+        display: inline-block; /* Make the link a block element */
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+
+        #study-info, #work-experience {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #2980b9;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+        header {
+        background-color: bisque; /* Set background color */
+        color: black; /* Set text color */
+        padding: 10px 0; /* Add padding to the header */
+    }
+
+    .nav-link {
+        display: flex; /* Use flexbox to align navigation links horizontally */
+        justify-content: space-around; /* Add space between navigation links */
+    }
+
+    .nav-link a {
+        text-decoration: none; /* Remove underline from links */
+        color: black; /* Set link text color */
+        padding: 10px 15px; /* Add padding to links */
+        border-radius: 5px; /* Add border-radius for a button-like appearance */
+        transition: background-color 0.3s; /* Add a smooth transition effect on hover */
+
+    }
+
+    .nav-link a:hover {
+        background-color: #555; /* Change background color on hover */
+    }
+</style>
+
+
+<body>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <header>         <div class="nav-link">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contact me.html">Contacts</a>
+
+     </div></header>
+
+    <div id="about-container">
+        <img id="profile-image" src="profile.jpg" alt="Profile Image" onclick="animateProfileImage()">
+        <h1>MAANYA PRAVEEN</h1>
+        <p>Greetings! I'm Maanya, a passionate and creative individual with a love for web development and design. With a keen eye for detail and a dedication to crafting visually appealing and functional websites, I bring a unique blend of technical skills and artistic flair to every project. My journey in the world of coding began with HTML and CSS, and over time, I've delved into the realms of JavaScript and various web development frameworks. Beyond the lines of code, I am driven by a constant desire to learn and explore new technologies, ensuring that I stay at the forefront of the ever-evolving digital landscape. When I'm not immersed in coding, you can find me experimenting with design concepts, enjoying a good cup of coffee, or exploring the latest trends in the tech world. Let's connect and explore the endless possibilities of the web together!</p>
+        
+        
+        <p>When I'm not coding, you can find me in some dance activities, attending tech meetups, or enjoying a good cup of coffee.</p>
+        
+        
+    </div>
+    <div id="about-container">
+        <i class="ri-book-open-line"></i>
+        <h3>Education</h3>
+        <ul>
+           <li>Completed my schooling in Hongirana School of Excellence in 2021</li>
+           <li>Completed Pre University in Junior College,Sagar in 2023</li>
+           <li>Currently studying in RV University</li>
+        </ul>        
+
+        
+        
+    </div>
+    <div id="about-container">
+        <h3>Skills</h3>
+            
+        <i class="ri-html5-fill"></i>
+        <i class="ri-css3-fill"></i>
+        <i class="ri-javascript-fill"></i>       
+  
+    </div>
+
+    
+
+    <div class="button-container">
+        <button class="button"><i class="ri-arrow-down-fill"></i></button>
+    </div>
+
+
+    <script>
+        function animateProfileImage() {
+            const profileImage = document.getElementById('profile-image');
+            profileImage.style.transform = 'rotate(360deg)';
+            setTimeout(() => {
+                profileImage.style.transform = 'rotate(0deg)';
+            }, 500);
+        }
+        // Show dancing image for a few seconds when the page loads
+        window.onload = function () {
+            const dancingImage = document.getElementById('dancing-image');
+            dancingImage.style.display = 'block';
+            setTimeout(() => {
+                dancingImage.style.display = 'none';
+            }, 6000); // Adjust the time in milliseconds (e.g., 3000 for 3 seconds)
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height:100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling on the body */
+}
+
+#main {
+    display: flex;
+    width: 85%;
+    height: 80%;
+    margin: 5%;
+    backdrop-filter: blur(50px); /* Adjust the blur radius as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the background color and opacity as needed */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-color: black;
+}
+
+
+#left{
+    position: relative;
+    width:40%;
+    height:100%;
+    
+}
+
+#right{
+    width:60%;
+    height:100%;
+    background-color: brown;
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: burlywood;
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-color:chocolate;
+}
+
+#rtop1{
+    width: 55%;
+    height: 100%;
+    background-color:orange; 
+}
+
+#rtop2{
+    width: 45%;
+    height: 100%;
+    background-color:rgb(238, 255, 0);  
+}
+
+#lnav{
+    display:flex;
+    width:100%;
+    padding:20px 30px;
+    justify-content: space-between;
+}
+
+#lnav1 a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+     font-weight: 500;
+     font-size: 20px;
+}
+
+#left #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+#text h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#text p{
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#text a.{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    font-size: 15px;
+     font-weight: 500;
+}
